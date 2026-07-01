@@ -358,7 +358,18 @@ const sock = makeWASocket({
                 if (!global.isBotActiveSent) {
                     try {
                         const jid = xnumber + '@s.whatsapp.net';
-                        const activeText = `╭━━━〔 *𝐑ɪᴋᴀ-xᴍᴅ ᴍɪɴɪ ᴠ1* 〕━━━┈⊷\n┃ 🐉 *ʙᴏᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ !*\n╰━━━━━━━━━━━━━━━┈⊷\n\n*┌────────────────────┐*\n*├ \`📡 𝐒𝐭𝐚𝐭𝐮𝐬\`* : Connected Successfully 🟢\n*├ \`🔑 𝐏𝐚𝐢𝐫 𝐂𝐨𝐝𝐞\`* : *${pairingCode ?? 'Already registered'}*\n*├ \`👨🏻‍💻 𝐎ᴡɴᴇʀ\`* : shamika denuwan\n*├ \`🧬 𝐕𝐞𝐫𝐬𝐢𝐨𝐧\`* : 3.0.0\n*└────────────────────┘*\n\n_🫟 𝐑ɪᴋᴀ-xᴍx ᴍɪɴɪ ᴠ3 ɪs ɴᴏᴡ ᴀᴄᴛɪᴠᴇ ᴀɴᴅ ʀᴇᴀᴅʏ ᴛᴏ ᴜsᴇ!_`;
+                        const activeText = `╭━━━〔 *𝐌ᴀᴋᴏ-xᴍᴅ ᴍɪɴɪ ᴠ1* 〕━━━┈⊷
+┃ 🐉 *ʙᴏᴛ ᴄᴏɴɴᴇᴄᴛᴇᴅ !*
+╰━━━━━━━━━━━━━━━┈⊷
+
+*┌────────────────────┐*
+*├ `📡 𝐒𝐭𝐚𝐭𝐮𝐬`* : Connected Successfully 🟢
+*├ `🔑 𝐏𝐚𝐢𝐫 𝐂𝐨𝐝𝐞`* : *Already registered*
+*├ `👨🏻‍💻 𝐎ᴡɴᴇʀ`* : Dineth Dilmina
+*├ `🧬 𝐕𝐞𝐫𝐬𝐢𝐨𝐧`* : 3.0.0
+*└────────────────────┘*
+
+_🫟 𝐌ᴀᴋᴏ-xᴍx ᴍɪɴɪ ᴠ1 ɪs ɴᴏᴡ ᴀᴄᴛɪᴠᴇ ᴀɴᴅ ʀᴇᴀᴅʏ ᴛᴏ ᴜsᴇ!_;
                         await sock.sendMessage(jid, { image: { url: "https://i.ibb.co/SXF26CNd/67416945273a.jpg" }, caption: activeText });
                         global.isBotActiveSent = true;
                     } catch (e) {}
